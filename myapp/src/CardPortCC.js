@@ -21,7 +21,7 @@ class CardPortCC extends Component{
     render(){
         return (
             <div>
-            <h2> post title {this.props.title}</h2>
+            <h2 style ={{backgroundColor:"red"}}> post title {this.props.title}</h2>
             <ul>
                 <li>post detail 1</li>
                 <li>post detail 2</li>
@@ -37,3 +37,4 @@ class CardPortCC extends Component{
 
 }
 export default CardPortCC
+

@@ -1,11 +1,12 @@
 
 import React from 'react'
 import Btn from './Btn'
+import './CardPost.css'
 
 
 const CardPost = (props) => {
     return(
-        <div>
+        <div className="card">
         
             <h2>post title {props.title}</h2>
             <ul>
