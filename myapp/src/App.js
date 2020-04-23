@@ -6,9 +6,9 @@ import CardPostCC from './CardPortCC'
 function App() {
   return (
     <div>
-      <CardPost />
-      <CardPost />
-      <CardPostCC />
+      <CardPost title="function component"/>
+      
+      <CardPostCC title="class component"/>
     </div>
   );
 }
