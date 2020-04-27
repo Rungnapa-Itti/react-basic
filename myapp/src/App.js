@@ -3,7 +3,6 @@ import CardPost from './component/CardPost';
 import CardPostCC from './component/CardPortCC'
 import './CSS/App.css'
 import { renderIntoDocument } from 'react-dom/test-utils';
-
 import Button from 'react-bootstrap/Button'
 
 
