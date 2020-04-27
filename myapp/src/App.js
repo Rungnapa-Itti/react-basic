@@ -4,6 +4,8 @@ import CardPostCC from './component/CardPortCC'
 import './CSS/App.css'
 import { renderIntoDocument } from 'react-dom/test-utils';
 
+import Button from 'react-bootstrap/Button'
+
 
 class App extends React.Component{
   constructor(props){
@@ -64,7 +66,8 @@ class App extends React.Component{
         />
         
 
-        <button onClick={() => this.addItems(this.state.newItems)}>add lists</button>
+        
+        <Button onClick={() => this.addItems(this.state.newItems)} variant="secondary">add lists</Button>
 
         {
           this.state.items.map(item => {
