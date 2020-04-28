@@ -1,10 +1,14 @@
 
-import React from 'react'
+import React , {useState} from 'react'
 import Btn from './Btn'
 import '../CSS/CardPost.css'
 
-
 const CardPost = (props) => {
+
+    const [number,setNumber] = useState(0)
+
+    
+
     return(
         <div className="card">
         
@@ -15,6 +19,8 @@ const CardPost = (props) => {
                 <li>post detail 2</li>
             </ul>
             <Btn />
+            <button onClick = {() => setNumber(number+1)}>count => useState {number}</button>
+           
         </div>
     )
 }
