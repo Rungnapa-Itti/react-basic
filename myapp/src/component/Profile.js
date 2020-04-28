@@ -5,9 +5,9 @@ const Profile = () =>{
         e.preventDefault()
 
         const name = e.target.name.value
-        const email = e.target.email.value
+        const e_mail = e.target.email.value
 
-        console.log(name,email)
+        console.log(name,e_mail)
     }
     return (
         <form style={{marginTop : 20}} onSubmit = {handleSubmit}>
