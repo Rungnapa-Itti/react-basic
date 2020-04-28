@@ -2,6 +2,7 @@ import React from 'react';
 import CardPost from './component/CardPost';
 import CardPostCC from './component/CardPortCC'
 import Profile from './component/Profile'
+import Welcoom from './component/Welcoom'
 import './CSS/App.css'
 import { renderIntoDocument } from 'react-dom/test-utils';
 import Button from 'react-bootstrap/Button'
@@ -81,6 +82,7 @@ class App extends React.Component{
         }
 
         <Profile />
+        <Welcoom />
       </div>
 
       
