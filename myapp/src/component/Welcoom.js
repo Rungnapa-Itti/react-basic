@@ -1,7 +1,7 @@
 import React , {useState , useEffect} from 'react'
 const Welcoom = () => {
     
-    const [message , setMessage] = useState(' ')
+    const [message , setMessage] = useState('')
     const [numberA,setNumberA] = useState(0)
     const [numberB,setNumberB] = useState(0)
     useEffect(() => {
@@ -13,7 +13,7 @@ const Welcoom = () => {
     useEffect( () => {
         setTimeout(() => {
             setMessage('Hi ')
-        }, 2000);
+        }, 5000);
     })
     return (
         <div>
@@ -26,7 +26,7 @@ const Welcoom = () => {
             <button onClick={() => setNumberA(numberA+1)}>Click Number A</button>
             <button onClick={() => setNumberB(numberB+1)}>Click Number B</button>
             <br />
-            Message : {message}
+            {message ? `Message: ${message}` : 'Loading...'}
         </div>
 
     )
