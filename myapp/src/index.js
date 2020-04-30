@@ -3,12 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin : 0;
+    background : "#ccc";
+  }
+`
 
 const name ="Rungnapa"
 const element = <h1>Hello {name}</h1>
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <App />
+    <GlobalStyle />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
